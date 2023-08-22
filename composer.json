@@ -1,0 +1,33 @@
+{
+    "name": "vcian/laravel-data-scraping",
+    "description": "The laravel data scraping.",
+    "keywords": [
+        "laravel",
+        "scraping"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":     "Vcian - ViitorCloud",
+            "homepage": "https://github.com/vcian",
+            "role":     "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vcian\\LaravelDataScraping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vcian\\LaravelDataScraping\\Providers\\ScrapingServiceProvider"
+            ]
+        }
+    }
+}
