@@ -9,4 +9,5 @@ Route::group([
     'as' => 'data_scraping.',
 ], function () {
     Route::get('/', [ScrapingController::class, 'index'])->name('index');
+    Route::post('/get-data', [ScrapingController::class, 'getData'])->name('get_data');
 });
